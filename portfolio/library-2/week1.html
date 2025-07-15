@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 1 Reflection | EAC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --eac-maroon: #800000;
+      --eac-gold: #FFD700;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #FFF8F4 0%, #FFFFFF 100%);
+      color: #333;
+      margin: 0;
+    }
+
+    .library-hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      min-height: 300px;
+      padding: 80px 20px;
+      background:
+        linear-gradient(rgba(128, 0, 0, 0.7), rgba(128, 0, 0, 0.7)),
+        url('../images/EAChead.jpg') center/cover no-repeat;
+      background-blend-mode: overlay;
+    }
+
+    .library-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .library-hero img {
+      position: relative;
+      z-index: 1;
+      width: 200px;
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .library-hero h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+      line-height: 1.2;
+    }
+
+    .weekly-card {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      max-width: 900px;
+      margin: 50px auto;
+      line-height: 1.7;
+      animation: fade-in 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    .weekly-card h2 {
+      color: var(--eac-maroon);
+      margin-bottom: 20px;
+    }
+
+    .weekly-card h3 {
+      color: var(--eac-maroon);
+      margin-top: 30px;
+    }
+
+    .weekly-card p {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background: var(--eac-maroon);
+      color: #fff;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--eac-gold);
+      color: #333;
+      font-size: 1.8rem;
+      padding: 15px 18px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      transition: transform 0.4s ease, box-shadow 0.3s ease, background 0.3s ease;
+      z-index: 999;
+      animation: pulse 2.5s infinite;
+    }
+
+    .home-button:hover {
+      background: var(--eac-maroon);
+      color: #fff;
+      transform: translateY(-5px) scale(1.1) rotate(-10deg);
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+    }
+
+    @keyframes fade-in {
+      to { opacity: 1; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <section class="library-hero">
+    <img src="../images/EAC.png" alt="EAC Logo" class="library-logo" />
+    <h1>Week 1 Reflection</h1>
+  </section>
+
+  <main class="library-content">
+    <article class="weekly-card">
+      <h2>A. Meaningful Experiences</h2>
+      <p>
+        My first week as an intern at Emilio Aguinaldo College (EAC) was incredibly meaningful and made a significant positive impact on me. The staff immediately made us feel welcome. Learning the basics of Koha and cataloging from Ma'am Vane, Sir Carlo, and Ma'am Jhune was an excellent start. I particularly enjoyed helping with the recataloging of reference books for medicine students, as it felt like truly important work directly supporting the students. While our meeting with Ma'am Erlinda, the chief librarian, and hearing her inspiring advice was a definite highlight for all of us inside the room. I even had the opportunity to answer phone calls and assist the librarians in reducing noise in the library, which made me feel like a librarian on the spot. For me, it was an eye-opening experience, providing insight into the daily tasks and impact of it to a busy academic library. Every interaction deepened my understanding of my chosen profession.
+      </p>
+
+      <h2>B. Lessons Learned</h2>
+      <p>
+        My biggest lesson this week was realizing I shouldn't be afraid to ask questions. One example of it was when we asked Ma'am Loren and Sir Carlo, I can say that they were incredibly patient and helpful with our tasks. We also learned how to use Koha and understanding how book information is entered can be confusing at times, but I'm gradually getting the hang of it. Moreover, recataloging was a huge help in remembering cataloging punctuations, especially those in MARC tags, which are crucial for accuracy. I also learned that even simple tasks like barcoding are incredibly important for overall organization and easy access to books. Dealing with technical issues, such as slow Wi-Fi, taught me valuable patience and problem-solving skills, rather than just getting stuck. These moments emphasized that consistent learning and adaptability are key in a library setting and during our internships. Lastly, I realized that every challenge became an opportunity for me to grow.
+      </p>
+
+      <h2>C. Best Practices and Features of the Library</h2>
+      <p>
+        EAC Library has many excellent practices and features. One of them is the ID tapping system for tracking student presence inside the library efficiently helps librarians minimize paper use and manual attendance. They also have separate reading areas for high school and college students, effectively meeting the diverse needs of their users. Also, a drinking area near the high school section demonstrates consideration for student comfort during their study sessions. The "Learn Space" for group discussions, managed by Ma'am Nicole, is another great feature of EAC. Furthermore, seeing book binding, managed by Sir Dos, was very helpful for preserving books. Lastly, the emphasis on asking questions is also a valuable practice actively encouraged within the library.
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2025 My Portfolio | EAC
+  </footer>
+
+  <a href="weekly.html" class="home-button" title="Back to Journal">⬅️</a>
+
+</body>
+</html>

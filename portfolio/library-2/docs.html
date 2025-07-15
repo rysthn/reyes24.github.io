@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Documentation | EAC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/library-2.css">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      background: #f8f9fa;
+    }
+
+    .library-hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      min-height: 300px;
+      padding: 80px 20px;
+      background:
+        linear-gradient(rgba(128, 0, 0, 0.6), rgba(128, 0, 0, 0.6)),
+        url('../images/EAChead.jpg') center/cover no-repeat;
+      background-blend-mode: overlay;
+    }
+
+    .library-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .library-hero .library-logo {
+      position: relative;
+      z-index: 1;
+      width: 200px;
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .library-hero h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+      line-height: 1.2;
+    }
+
+    .library-hero p {
+      position: relative;
+      z-index: 1;
+      font-size: 1.1rem;
+      margin: 0;
+      max-width: 90%;
+      line-height: 1.4;
+    }
+
+    .docs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    .docs-grid img {
+      width: 100%;
+      height: 220px; 
+      object-fit: cover; 
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .docs-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      background: #800000;
+      color: #fff;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #FFD700;
+      color: #333;
+      font-size: 1.8rem;
+      padding: 15px 18px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease, box-shadow 0.3s ease, background 0.3s ease;
+      z-index: 999;
+    }
+
+    .home-button:hover {
+      background: #800000;
+      color: #fff;
+      transform: translateY(-5px) scale(1.1) rotate(-10deg);
+    }
+  </style>
+</head>
+<body>
+
+  <section class="library-hero fade-in">
+    <img src="../images/EAC.png" alt="EAC Logo" class="library-logo" />
+    <h1>Documentation</h1>
+  </section>
+
+  <main class="docs-grid slide-in">
+    <img src="../images/EAC/IMG_20250502_100216.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250502_134734.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250502_163026.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250502_163247.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250505_095055.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250505_095734.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250505_133953.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250505_160020.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250505_163737.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250506_081054.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250506_101553.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250506_120926.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250506_163425.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250506_163440.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250506_164800.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250506_164809.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250506_164815.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250506_170124.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250507_081209.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250507_110041.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250507_110042.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250507_160936.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250507_160944.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250507_161645.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250507_170300.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250508_091630.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250508_130520.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250509_154058.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250509_165743.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250513_164213.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250514_102808.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250514_102855.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250514_102859.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250514_102914.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250514_102920.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250514_102927.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250514_103019.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250516_161234.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250516_170123.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250516_170414.jpg" alt="" />
+    <img src="../images/EAC/1.jpg" alt="" />
+    <img src="../images/EAC/IMG_20250422_111657.jpg" alt="" />
+    <!-- ...and so on for the rest... -->
+
+  </main>
+
+  <footer>
+    &copy; 2025 My Portfolio | EAC
+  </footer>
+
+  <a href="library-2.html" class="home-button" title="Back to Library">⬅️</a>
+
+</body>
+</html>

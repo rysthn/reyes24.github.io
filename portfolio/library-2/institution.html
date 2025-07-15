@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Institution Overview | EAC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/library-2.css">
+  <style>
+    .library-hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      min-height: 300px;
+      padding: 80px 20px;
+      background: 
+        linear-gradient(rgba(128, 0, 0, 0.7), rgba(128, 0, 0, 0.7)),
+        url('../images/EAChead.jpg') center/cover no-repeat;
+      background-blend-mode: overlay;
+       background-position:center 78%;; 
+    }
+
+    .library-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .library-hero .library-logo {
+      position: relative;
+      z-index: 1;
+      width: 200px;
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .library-hero h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+      line-height: 1.2;
+    }
+
+    .library-hero p {
+      position: relative;
+      z-index: 1;
+      font-size: 1.1rem;
+      margin: 0;
+      max-width: 90%;
+      line-height: 1.4;
+    }
+
+    .institution-card {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      max-width: 800px;
+      margin: 50px auto;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    .institution-card h2 {
+      color: var(--eac-maroon);
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background: var(--eac-maroon);
+      color: #fff;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--eac-gold);
+      color: #333;
+      font-size: 1.8rem;
+      padding: 15px 18px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      transition: transform 0.4s ease, box-shadow 0.3s ease, background 0.3s ease;
+      z-index: 999;
+      animation: pulse 2.5s infinite;
+    }
+
+    .home-button:hover {
+      background: var(--eac-maroon);
+      color: #fff;
+      transform: translateY(-5px) scale(1.1) rotate(-10deg);
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="library-hero fade-in">
+    <img src="../images/EAC.png" alt="EAC Logo" class="library-logo" />
+    <h1>Institution Overview</h1>
+  </section>
+
+  <main class="library-content slide-in">
+    <article class="institution-card">
+      <h2>About EAC</h2>
+      <p>
+        The Emilio Aguinaldo College offers library services and resources that support the college's academic,
+        administrative, research, and recreational initiatives. It helps the students to become knowledgeable at
+        using the library's resources and services in ways that are relevant to their own development.
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2025 My Portfolio | EAC
+  </footer>
+
+  <a href="library-2.html" class="home-button" title="Back to Home">⬅️</a>
+
+</body>
+</html>
