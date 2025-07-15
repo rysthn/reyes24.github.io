@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weekly Reflection Journal | DLS-CSB</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../css/library-3.css">
+  <style>
+    :root {
+      --csb-green: #00693e;
+      --csb-gold: #FFD700;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #F6FFF8 0%, #FFFFFF 100%);
+      margin: 0;
+      text-align: center;
+      color: #333;
+    }
+
+    .library-hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      min-height: 300px;
+      padding: 80px 20px;
+      background:
+        linear-gradient(rgba(0, 105, 62, 0.7), rgba(0, 105, 62, 0.7)),
+        url('../images/CSBhead.jpg') center/cover no-repeat;
+      background-blend-mode: overlay;
+      background-position: center 68%;
+    }
+
+    .library-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .library-hero * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .library-logo {
+      width: 200px;
+      max-width: 200px;
+      margin-bottom: 20px;
+      animation: fadeInDown 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    .library-hero h1 {
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+      line-height: 1.2;
+      animation: fadeInUp 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    .library-hero p {
+      font-size: 1.1rem;
+      margin: 0;
+      max-width: 90%;
+      line-height: 1.4;
+      animation: fadeInUp 2s ease forwards;
+      opacity: 0;
+    }
+
+    nav {
+      margin: 60px 0;
+    }
+
+    nav a {
+      display: inline-block;
+      background: var(--csb-green);
+      color: #fff;
+      text-decoration: none;
+      margin: 15px;
+      padding: 18px 40px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      box-shadow: var(--shadow);
+      transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    nav a:hover {
+      background: var(--csb-gold);
+      color: #333;
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background: var(--csb-green);
+      color: #fff;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--csb-gold);
+      color: #333;
+      font-size: 1.8rem;
+      padding: 15px 18px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      transition: transform 0.4s ease, box-shadow 0.3s ease, background 0.3s ease;
+      z-index: 999;
+      animation: pulse 2.5s infinite;
+    }
+
+    .home-button:hover {
+      background: var(--csb-green);
+      color: #fff;
+      transform: translateY(-5px) scale(1.1) rotate(-10deg);
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+    }
+
+    @keyframes fadeInDown {
+      0% { transform: translateY(-20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      0% { transform: translateY(20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="library-hero">
+    <img src="../images/CSB.png" alt="DLS-CSB Logo" class="library-logo" />
+    <h1>Weekly Reflection Journal</h1>
+  </section>
+
+  <nav>
+    <a href="week1.html">🗓️ Week 1</a>
+    <a href="week2.html">🗓️ Week 2</a>
+    <a href="week3.html">🗓️ Week 3</a>
+  </nav>
+
+  <footer>
+    &copy; 2025 MyPortfolio | DLS-CSB
+  </footer>
+  <a href="library-3.html" class="home-button" title="Back to Home">⬅️</a>
+
+</body>
+</html>

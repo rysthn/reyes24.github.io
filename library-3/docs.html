@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Documentation | CSB</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/library-3.css">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      background: #f8f9fa;
+    }
+
+    .library-hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      min-height: 300px;
+      padding: 80px 20px;
+      background:
+        linear-gradient(rgba(0, 102, 0, 0.6), rgba(0, 102, 0, 0.6)),
+        url('../images/CSBhead.jpg') center/cover no-repeat;
+      background-blend-mode: overlay;
+    }
+
+    .library-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .library-hero .library-logo {
+      position: relative;
+      z-index: 1;
+      width: 200px;
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .library-hero h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+      line-height: 1.2;
+    }
+
+    .library-hero p {
+      position: relative;
+      z-index: 1;
+      font-size: 1.1rem;
+      margin: 0;
+      max-width: 90%;
+      line-height: 1.4;
+    }
+
+    .docs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    .docs-grid img {
+      width: 100%;
+      height: 220px; 
+      object-fit: cover; 
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .docs-grid img:hover {
+      transform: scale(1.05);
+    }
+
+     footer {
+      text-align: center;
+      background: var(--csb-green);
+      color: #fff;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+
+     .home-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--csb-gold);
+      color: #333;
+      font-size: 1.8rem;
+      padding: 15px 18px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      transition: transform 0.4s ease, box-shadow 0.3s ease, background 0.3s ease;
+      z-index: 999;
+      animation: pulse 2.5s infinite;
+    }
+
+    .home-button:hover {
+      background: var(--csb-green);
+      color: #fff;
+      transform: translateY(-5px) scale(1.1) rotate(-10deg);
+    }
+  </style>
+</head>
+<body>
+
+  <section class="library-hero fade-in">
+    <img src="../images/CSB.png" alt="CSB Logo" class="library-logo" />
+    <h1>Documentation</h1>
+  </section>
+
+ <main class="docs-grid slide-in">
+  <img src="../images/CSB/22490ae8-50fe-4c34-b79b-88cd6570c630photo.png.jpeg" alt="" />
+  <img src="../images/CSB/2352032a-99a2-4a3a-bb25-e1a94faf56e2photo.png.jpeg" alt="" />
+  <img src="../images/CSB/BENILDE DTR_1.jpg" alt="" />
+  <img src="../images/CSB/d427bac7-b198-4955-9ba3-ae4e3a3676f6photo.png.jpeg" alt="" />
+  <img src="../images/CSB/IMG_20250519_091228.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250519_091254.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250519_091456.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250519_091500.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250519_111103.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250519_145016.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250519_161524.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250519_161533.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250522_143957.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250522_144007.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250522_144014.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250522_144029.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250522_144036.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250523_171637.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250527_082748.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250527_082754.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250527_082804.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250527_082815.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250527_082824.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250527_082838.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250527_082920.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250527_082927.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250527_083010.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250527_083013.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250527_083151.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250527_083200.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250527_083210.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250527_083252.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250527_083301.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250527_083307.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250527_083332.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250527_083339.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250527_083343.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250527_135759.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250529_095022.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250529_095024.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250529_100437.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250529_105535.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250529_153625.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250529_154413.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250529_154416.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250529_154804.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250529_154911.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250529_155504.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250529_162055.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250529_162101.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250529_163559.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250529_164427.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250529_164526.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250529_164543.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250529_165031.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250529_165033.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250529_170949.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250529_171256.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250530_112728.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250530_114654.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250530_122014.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250530_123237.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250530_141003.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250530_162341.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250530_164708.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250530_164709.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250530_165459.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250531_090234.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250531_100025.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250602_115921.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250602_115938.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250602_173035.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250603_133050.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250603_133057.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250603_133100.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250603_133102.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250603_133137.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250603_133143.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250603_141734.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250603_170047.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250604_144533.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250604_144537.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250604_151820.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250604_152117.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250604_154940.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250604_154947.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250605_121321.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250605_123112.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250605_123117.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250605_123412.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250605_123423.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250605_123437.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250605_123442.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250605_123450.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250605_123611.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250605_123616.jpg" alt="" />
+  <img src="../images/CSB/IMG_20250605_123621.jpg" alt="" />
+  <img src="../images/CSB/PICT0392.jpg" alt="" />
+  <img src="../images/CSB/received_668257909370250.jpeg" alt="" />
+  <img src="../images/CSB/received_984390736901732.jpeg" alt="" />
+  <img src="../images/CSB/received_1045334563613835.jpeg" alt="" />
+  <img src="../images/CSB/received_1182092790413300.jpeg" alt="" />
+  <img src="../images/CSB/received_2105592146599135.jpeg" alt="" />
+  <img src="../images/CSB/REYES, CINDY_page-0001.jpg" alt="" />
+  <img src="../images/CSB/Screenshot_2025-06-06-17-43-59-959_com.google.android.gm.jpg" alt="" />
+</main>
+
+
+
+  <footer>
+    &copy; 2025 My Portfolio | De La Salle-College of Saint Benilde
+  </footer>
+
+  <a href="library-3.html" class="home-button" title="Back to Library">⬅️</a>
+
+</body>
+</html>

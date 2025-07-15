@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Appendices | CSB</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/library-3.css">
+  <style>
+    :root {
+      --csb-green: #00693e;
+      --csb-gold: #FFD700;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .library-hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      min-height: 300px;
+      padding: 80px 20px;
+      background:
+        linear-gradient(rgba(0, 105, 62, 0.7), rgba(0, 105, 62, 0.7)),
+        url('../images/CSBhead.jpg') center/cover no-repeat;
+      background-blend-mode: overlay;
+      background-position: center 68%;
+    }
+
+    .library-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .library-hero .library-logo {
+      position: relative;
+      z-index: 1;
+      width: 200px;
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .library-hero h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+      line-height: 1.2;
+    }
+
+    .library-hero p {
+      position: relative;
+      z-index: 1;
+      font-size: 1.1rem;
+      margin: 0;
+      max-width: 90%;
+      line-height: 1.4;
+    }
+
+    .appendices-section {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      max-width: 1000px;
+      margin: 50px auto;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    .appendices-section h2 {
+      color: var(--csb-green);
+      margin-bottom: 20px;
+    }
+
+      .photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  justify-items: center; /* Center single image */
+}
+
+.photo-grid figure {
+  margin: 0;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+  width: 250px;              /* 🟢 fixed width */
+  aspect-ratio: 1 / 1;       /* 🟢 fixed square */
+}
+
+.photo-grid figure:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Crop to fill square */
+  display: block;
+}
+
+.photo-grid figcaption {
+  padding: 10px;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #555;
+}
+
+    footer {
+      text-align: center;
+      background: var(--csb-green);
+      color: #fff;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--csb-gold);
+      color: #333;
+      font-size: 1.8rem;
+      padding: 15px 18px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      transition: transform 0.4s ease, box-shadow 0.3s ease, background 0.3s ease;
+      z-index: 999;
+      animation: pulse 2.5s infinite;
+    }
+
+    .home-button:hover {
+      background: var(--csb-green);
+      color: #fff;
+      transform: translateY(-5px) scale(1.1) rotate(-10deg);
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 📎 Hero Header -->
+  <section class="library-hero fade-in">
+    <img src="../images/CSB.png" alt="CSB Logo" class="library-logo" />
+    <h1>Daily Accomplishments</h1>
+  </section>
+
+  <main>
+    <!-- 🗓️ Example WEEK 1 -->
+  <!-- 🗓️ WEEK 1 -->
+<section class="appendices-section">
+  <h2> WEEK 1: May 19 – 23, 2025</h2>
+
+  <!-- ✅ May 19 -->
+  <h3> May 19, Monday</h3>
+  <ul>
+    <li>Orientation held on the 8th floor of the DAC building by Ma’am Vanessa.</li>
+    <li>Attempted to open WMS and Infonet accounts as instructed (troubleshooted errors).</li>
+    <li>Sir Norman accompanied me to my assigned library at CSB Taft Extension.</li>
+    <li>Met Ma'am Marvs (librarian), Ma'am Ana (head librarian), Sir Aldrin and Sir Reymart (staff).</li>
+    <li>Sir Aldrin gave a library tour and collection orientation.</li>
+    <li>Ma'am Marvs taught me about the CLR website and assisting patrons via Larcy online chat.</li>
+    <li>Learned printing services and book loan processes from Sir Aldrin and Sir Reymart.</li>
+    <li>Practiced processing book loans and returns using the automated machine.</li>
+    <li>Practiced shelf reading while locating books (found 8 out of 10 needed by users).</li>
+    <li>Assisted two clients with printing and one client with returning books.</li>
+  </ul>
+  <div class="photo-grid fade-in">
+  <figure><img src="../images/CSBAPP/19/photo_1_2025-07-14_21-12-51.jpg"></figure>
+  <figure><img src="../images/CSBAPP/19/photo_2_2025-07-14_21-12-51.jpg"></figure>
+  <figure><img src="../images/CSBAPP/19/photo_3_2025-07-14_21-12-51.jpg"></figure>
+  <figure><img src="../images/CSBAPP/19/photo_4_2025-07-14_21-12-51.jpg"></figure>
+  <figure><img src="../images/CSBAPP/19/photo_5_2025-07-14_21-12-51.jpg"></figure>
+  <figure><img src="../images/CSBAPP/19/photo_6_2025-07-14_21-12-51.jpg"></figure>
+</div>
+  </div>
+
+  <!-- ✅ May 20 -->
+  <h3> May 20, Tuesday</h3>
+  <ul>
+    <li>Helped two students find Filipiniana books on "Pantayong Pananaw" by Zeus Salazar.</li>
+    <li>Assisted approximately 10–15 patrons with printing.</li>
+    <li>Assisted one SDEA student.</li>
+    <li>Sir Raymond helped locate Filipiniana books for patrons.</li>
+    <li>Completed Learning Plan tasks assigned by Ma'am Marvs.</li>
+    <li>Explored Scopus and Taylor & Francis databases.</li>
+    <li>Wrote draft for my Learning Plan tasks.</li>
+    <li>Checked books in and out using the automated machine.</li>
+  </ul>
+  <div class="photo-grid fade-in">
+  <figure>
+    <img src="../images/feb13-2.jpg" alt="I don't have any documentation since I was worried that it's not allowed since Ms. Ana the head librarian is there. We're also busy due to the students need for printing.
+">
+    <figcaption>
+      I don't have any documentation since I was worried that it's not allowed since Ms. Ana the head librarian is there. We're also busy due to the students need for printing.
+    </figcaption>
+  </figure>
+</div>
+
+  <!-- ✅ May 21 -->
+  <h3> May 21, Wednesday</h3>
+  <ul>
+    <li>Assisted one deaf student in borrowing a laptop.</li>
+    <li>Helped 10–15 students with printing.</li>
+    <li>Assisted three patrons (one student, two teachers) with borrowing and returning books.</li>
+    <li>Addressed patrons’ concerns regarding printer usage.</li>
+    <li>Shelved books and performed shelf-reading to familiarize with call numbers.</li>
+    <li>Assisted another deaf student with borrowing books.</li>
+    <li>Organized Springshare.</li>
+  </ul>
+   <div class="photo-grid fade-in">
+  <figure>
+    <img src="../images/feb13-2.jpg" alt="I don't have any documentation since I was worried that it's not allowed since Ms. Ana the head librarian is there. We're also busy due to the students need for printing.
+">
+    <figcaption>
+      I don’t have any documentation because we were so busy and the documents were confidential.
+    </figcaption>
+  </figure>
+</div>
+
+  <!-- ✅ May 22 -->
+  <h3> May 22, Thursday</h3>
+  <ul>
+    <li>Assisted deaf students with borrowing books.</li>
+    <li>Processed borrowed books for students and faculty.</li>
+    <li>Helped patrons with printing.</li>
+    <li>Observed Larcy chats and learned how queries are handled.</li>
+    <li>Finalized my Learning Plan.</li>
+    <li>Served students who requested books and assisted faculty with loans and returns.</li>
+    <li>Processed books from the Antipolo branch and shelved books.</li>
+  </ul>
+  <div class="photo-grid fade-in">
+  <figure><img src="../images/CSBAPP/22/photo_1_2025-07-14_21-15-16.jpg"></figure>
+  <figure><img src="../images/CSBAPP/22/photo_2_2025-07-14_21-15-16.jpg"></figure>
+  <figure><img src="../images/CSBAPP/22/photo_3_2025-07-14_21-15-16.jpg"></figure>
+  <figure><img src="../images/CSBAPP/22/photo_4_2025-07-14_21-15-16.jpg"></figure>
+  <figure><img src="../images/CSBAPP/22/photo_5_2025-07-14_21-15-16.jpg"></figure>
+  <figure><img src="../images/CSBAPP/22/photo_6_2025-07-14_21-15-16.jpg"></figure>
+</div>
+
+  <!-- ✅ May 23 -->
+  <h3>May 23, Friday</h3>
+  <ul>
+    <li>Transitioned from RS-Extension branch to RS-DAC branch.</li>
+    <li>Discussed my experience and learnings at Extension with Sir Abe.</li>
+    <li>Sir Abe taught me proper shelving techniques and checked my re-shelved books.</li>
+    <li>Completed a mini-test by Sir Abe to check my understanding.</li>
+    <li>Practiced shelving online after lunch.</li>
+    <li>Learned another shelving technique from a library assistant.</li>
+    <li>Opened Springshare to be available for patron inquiries.</li>
+    <li>New task from Sir Abe: researched latest books on financial management in architecture.</li>
+    <li>Assisted one patron with printing.</li>
+  </ul>
+  <div class="photo-grid fade-in">
+  <figure><img src="../images/CSBAPP/23/photo_1_2025-07-14_21-15-29.jpg"></figure>
+  <figure><img src="../images/CSBAPP/23/photo_2_2025-07-14_21-15-29.jpg"></figure>
+  <figure><img src="../images/CSBAPP/23/photo_3_2025-07-14_21-15-29.jpg"></figure>
+  <figure><img src="../images/CSBAPP/23/photo_4_2025-07-14_21-15-29.jpg"></figure>
+</div>
+</section>
+<!-- 🗓️ WEEK 2 -->
+<section class="appendices-section">
+  <h2>WEEK 2: May 26 – 31, 2025</h2>
+
+  <!-- ✅ May 26 -->
+  <h3> May 26, Monday</h3>
+  <ul>
+    <li>Assisted students with printing.</li>
+    <li>Answered a query in Larcy Chat.</li>
+    <li>Found and added more relevant and recent books for the Architecture course, including updating the bibliography.</li>
+    <li>Practiced shelving books.</li>
+  </ul>
+   <div class="photo-grid fade-in">
+  <figure>
+    <img src="../images/feb13-2.jpg" alt="I don't have any documentation since I need to focus on the task given by Head Librarian in RS.">
+    <figcaption>
+      I don’t have any documentation because we were so busy and the documents were confidential.
+    </figcaption>
+  </figure>
+</div>
+
+  <!-- ✅ May 27 -->
+  <h3>May 27, Tuesday</h3>
+  <ul>
+    <li>Observed and roamed around the library area.</li>
+    <li>Continued adding bibliographies/books related to architecture subjects.</li>
+    <li>Assisted students with borrowing and returning books at the counter.</li>
+    <li>Helped students with printing.</li>
+    <li>Monitored Larcy for patron chats.</li>
+  </ul>
+  <div class="photo-grid fade-in">
+  <figure><img src="../images/CSBAPP/27/photo_1_2025-07-14_21-15-41.jpg"></figure>
+  <figure><img src="../images/CSBAPP/27/photo_2_2025-07-14_21-15-41.jpg"></figure>
+  <figure><img src="../images/CSBAPP/27/photo_3_2025-07-14_21-15-41.jpg"></figure>
+  <figure><img src="../images/CSBAPP/27/photo_4_2025-07-14_21-15-41.jpg"></figure>
+  <figure><img src="../images/CSBAPP/27/photo_5_2025-07-14_21-15-41.jpg"></figure>
+  <figure><img src="../images/CSBAPP/27/photo_6_2025-07-14_21-15-41.jpg"></figure>
+</div>
+
+  <!-- ✅ May 28 -->
+  <h3> May 28, Wednesday</h3>
+  <ul>
+    <li>Continued working on the task assigned by Sir Abe, completing it on time before transferring to the Technical Section.</li>
+    <li>Served students with their needs, including printing and book check-ins and check-outs.</li>
+    <li>Performed shelf-reading and shelving of books.</li>
+    <li>Observed Larcy chats again, waiting for patrons to connect.</li>
+  </ul>
+   <div class="photo-grid fade-in">
+  <figure>
+    <img src="../images/feb13-2.jpg" alt="I don't have any documentation since I need to focus on the task given by Head Librarian in RS. I also need to focus on the LarCy Chat.">
+    <figcaption>
+      I don’t have any documentation because we were so busy and the documents were confidential.
+    </figcaption>
+  </figure>
+</div>
+
+  <!-- ✅ May 29 -->
+  <h3>May 29, Thursday</h3>
+  <ul>
+    <li>Reassigned to the Technical Section (TS) in the DAC building.</li>
+    <li>Orientation on Technical Section processes and the material processing slip.</li>
+    <li>Learned book bagging with Ma'am Jami, encoding and stamping with Sir Norman.</li>
+    <li>Cataloging orientation with Ma'am Edith using WMS.</li>
+    <li>Learned about adaptation, original cataloging, and thesis cataloging with Kuya Ivan’s guidance.</li>
+    <li>Cataloged two adaptation entries, one original cataloging entry, and one thesis.</li>
+  </ul>
+ <div class="photo-grid fade-in">
+  <figure><img src="../images/CSBAPP/29/photo_1_2025-07-14_21-15-56.jpg"></figure>
+  <figure><img src="../images/CSBAPP/29/photo_2_2025-07-14_21-15-56.jpg"></figure>
+  <figure><img src="../images/CSBAPP/29/photo_3_2025-07-14_21-15-56.jpg"></figure>
+  <figure><img src="../images/CSBAPP/29/photo_4_2025-07-14_21-15-56.jpg"></figure>
+  <figure><img src="../images/CSBAPP/29/photo_5_2025-07-14_21-15-56.jpg"></figure>
+  <figure><img src="../images/CSBAPP/29/photo_6_2025-07-14_21-15-56.jpg"></figure>
+  <figure><img src="../images/CSBAPP/29/photo_7_2025-07-14_21-15-56.jpg"></figure>
+</div>
+
+  <!-- ✅ May 30 -->
+  <h3> May 30, Friday</h3>
+  <ul>
+    <li>Cataloged 14 theses.</li>
+    <li>Received further cataloging training from Kuya Ivan.</li>
+  </ul>
+ <div class="photo-grid fade-in">
+  <figure><img src="../images/CSBAPP/30/photo_1_2025-07-14_21-16-30.jpg"></figure>
+  <figure><img src="../images/CSBAPP/30/photo_2_2025-07-14_21-16-30.jpg"></figure>
+  <figure><img src="../images/CSBAPP/30/photo_3_2025-07-14_21-16-30.jpg"></figure>
+  <figure><img src="../images/CSBAPP/30/photo_4_2025-07-14_21-16-30.jpg"></figure>
+</div>
+
+  <!-- ✅ May 31 -->
+  <h3> May 31, Saturday</h3>
+  <ul>
+    <li>Completed Saturday OJT at the RS-Taft Extension.</li>
+    <li>Assisted a student with printing.</li>
+    <li>Worked on bibliographies for STEM SHS students and updated Excel files.</li>
+    <li>Served students with various needs.</li>
+  </ul>
+  <div class="photo-grid fade-in">
+  <figure><img src="../images/CSBAPP/31/photo_1_2025-07-14_21-16-42.jpg"></figure>
+  <figure><img src="../images/CSBAPP/31/photo_2_2025-07-14_21-16-42.jpg"></figure>
+  <figure><img src="../images/CSBAPP/31/photo_3_2025-07-14_21-16-42.jpg"></figure>
+  <figure><img src="../images/CSBAPP/31/photo_4_2025-07-14_21-16-42.jpg"></figure>
+</div>
+</section>
+<!-- 🗓️ WEEK 3 -->
+<section class="appendices-section">
+  <h2> WEEK 3: June 2 – 5, 2025</h2>
+
+  <!-- ✅ June 2 -->
+  <h3> June 2, Monday</h3>
+  <ul>
+    <li>Assigned to the Acquisition Department under Sir Sherwin.</li>
+    <li>Learned about Benilde's book acquisition process: requesting, listing, and purchasing from publishers.</li>
+    <li>Discussed transparency and honesty in budgeting and purchasing with Sir Sherwin.</li>
+    <li>Taught how to create LRM (Library Resource Management) documents to evaluate requested materials.</li>
+    <li>Tasked with inputting information for the 2025 summary of library holdings.</li>
+    <li>Completed the summary for Culinary Arts and Hotel Management programs.</li>
+    <li>Visited the AKIC building.</li>
+  </ul>
+ <div class="photo-grid fade-in">
+  <figure><img src="../images/CSBAPP/2/photo_1_2025-07-14_21-17-03.jpg"></figure>
+  <figure><img src="../images/CSBAPP/2/photo_2_2025-07-14_21-17-03.jpg"></figure>
+</div>
+
+  <!-- ✅ June 3 -->
+  <h3> June 3, Tuesday</h3>
+  <ul>
+    <li>Finished the 2025 summary of library holdings for Culinary Arts, International Hotel Management, and Hospitality Management.</li>
+    <li>Created LRMs for various department book requests needing approval and completed them before lunch.</li>
+    <li>Sent the updated file to Sir Sherwin for checking.</li>
+    <li>After lunch, created and input bibliographies for Arts and Design and Business Management departments into an Excel file.</li>
+    <li>Given another LRM task by Sir Sherwin after finishing previous assignments.</li>
+  </ul>
+  <div class="photo-grid fade-in">
+  <figure><img src="../images/CSBAPP/3/photo_1_2025-07-14_21-17-15.jpg"></figure>
+  <figure><img src="../images/CSBAPP/3/photo_2_2025-07-14_21-17-15.jpg"></figure>
+  <figure><img src="../images/CSBAPP/3/photo_3_2025-07-14_21-17-15.jpg"></figure>
+  <figure><img src="../images/CSBAPP/3/photo_4_2025-07-14_21-17-15.jpg"></figure>
+</div>
+
+  <!-- ✅ June 4 -->
+  <h3> June 4, Wednesday</h3>
+  <ul>
+    <li>Assigned to the Marketing Section under Ma'am Rizza.</li>
+    <li>Learned about marketing library collections, services, and facilities.</li>
+    <li>Tasked with finding books related to Father's Day and World Environment Day: title, citation, cover image, and short summary.</li>
+    <li>Visited Atrium, Taft Extension, and DAC buildings to shoot a marketing video contrasting old and new footage.</li>
+  </ul>
+  <div class="photo-grid fade-in">
+  <figure><img src="../images/CSBAPP/4/photo_1_2025-07-14_21-17-27.jpg"></figure>
+  <figure><img src="../images/CSBAPP/4/photo_2_2025-07-14_21-17-27.jpg"></figure>
+  <figure><img src="../images/CSBAPP/4/photo_3_2025-07-14_21-17-27.jpg"></figure>
+  <figure><img src="../images/CSBAPP/4/photo_4_2025-07-14_21-17-27.jpg"></figure>
+</div>
+
+  <!-- ✅ June 5 -->
+  <h3> June 5, Thursday</h3>
+  <ul>
+    <li>Last day at Benilde.</li>
+    <li>Tasked by Ma'am Rizza to create a pubmat about WGSN and BoF databases.</li>
+    <li>Joined an online meeting with Ma'am Rizza for task feedback and a demonstration of WMS postings.</li>
+  </ul>
+  <div class="photo-grid fade-in">
+  <figure><img src="../images/CSBAPP/5/photo_1_2025-07-14_21-17-39.jpg"></figure>
+  <figure><img src="../images/CSBAPP/5/photo_2_2025-07-14_21-17-39.jpg"></figure>
+  <figure><img src="../images/CSBAPP/5/photo_3_2025-07-14_21-17-39.jpg"></figure>
+  <figure><img src="../images/CSBAPP/5/photo_4_2025-07-14_21-17-39.jpg"></figure>
+</div>
+</section>
+
+
+
+  </main>
+
+  <footer>
+    &copy; 2025 My Portfolio | DSL-CSB
+  </footer>
+
+  <a href="library-3.html" class="home-button" title="Back to Home">⬅️</a>
+
+</body>
+</html>
