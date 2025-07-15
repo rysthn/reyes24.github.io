@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 2 Reflection Journal | DLS-CSB</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../css/library-3.css">
+  <style>
+    :root {
+      --csb-green: #00693e;
+      --csb-gold: #FFD700;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #F6FFF8 0%, #FFFFFF 100%);
+      margin: 0;
+      color: #333;
+    }
+
+    .library-hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      min-height: 300px;
+      padding: 80px 20px;
+      background:
+        linear-gradient(rgba(0, 105, 62, 0.7), rgba(0, 105, 62, 0.7)),
+        url('../images/CSBhead.jpg') center/cover no-repeat;
+      background-blend-mode: overlay;
+      background-position: center 68%;
+    }
+
+    .library-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .library-hero * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .library-logo {
+      width: 200px;
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .library-hero h1 {
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+      line-height: 1.2;
+    }
+
+    .library-hero p {
+      font-size: 1.1rem;
+      margin: 0;
+      max-width: 90%;
+      line-height: 1.4;
+    }
+
+    .journal-content {
+      max-width: 900px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      line-height: 1.7;
+    }
+
+    .journal-content h2 {
+      color: var(--csb-green);
+      margin-top: 0;
+    }
+
+    footer {
+      background: var(--csb-green);
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--csb-gold);
+      color: #333;
+      font-size: 1.8rem;
+      padding: 15px 18px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      transition: transform 0.4s ease, box-shadow 0.3s ease, background 0.3s ease;
+      z-index: 999;
+    }
+
+    .home-button:hover {
+      background: var(--csb-green);
+      color: #fff;
+      transform: translateY(-5px) scale(1.1) rotate(-10deg);
+    }
+  </style>
+</head>
+<body>
+
+  <section class="library-hero">
+    <img src="../images/CSB.png" alt="DLS-CSB Logo" class="library-logo" />
+    <h1>Week 2 Reflection Journal</h1>
+  </section>
+
+  <main class="journal-content">
+    <h2>A. Meaningful Experiences</h2>
+    <p>This week was different for me because I was assigned to the Technical Section (TS), and I was feeling very nervous. Still, I was lucky to understand and got to see how books are prepared for the shelves, from their arrival to their final setup in Benilde. I was also fortunate to experience and try their paid system, WMS, for tracking books, including school papers (theses) and more. It was pretty organized, even if it took me a little time to learn. I'm grateful to Kuya Ivan because he helped us with cataloging; he made it much easier for us to understand and do it since it was very hard for us to grasp easily the way of cataloging here in Benilde.</p>
+
+    <h2>B. Lessons Learned</h2>
+    <p>I learned that a lot of careful work goes on in the Technical Section here in the DAC. I found out that I really have to pay attention to small details, like when I was looking for the newest books to add to our lists (I used their WorldCat since they have a subscription to it). We also need to consider the availability, the year, and if they align with the students' courses. Moreover, being in the TS also taught me to be open to new things and to learn them willingly. Even though I wasn't familiar with Benilde's system, I willingly learned it to complete my assigned tasks.</p>
+
+    <h2>C. Best Practices and Best Features of the Library</h2>
+    <p>One of the coolest things I saw was how the TS uses a special "slip" or paper to keep everything organized when they're getting books ready to be loaned out by students. It just makes the whole process easier. As for the library's features, I really like Larcy Chat and WMS. Larcy Chat is such an easy way for students to ask questions and get help right away. WMS was also a great help for all librarians to manage and keep track of everything well, including library functions, services, and their websites.</p>
+  </main>
+
+  <footer>
+    &copy; 2025 My Portfolio | DLS-CSB
+  </footer>
+
+  <a href="weekly.html" class="home-button" title="Back to Weekly Journal">⬅️</a>
+
+</body>
+</html>
