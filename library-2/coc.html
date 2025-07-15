@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Certificate of Completion | EAC Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/library-2.css">
+  <style>
+    .library-hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      min-height: 250px;
+      padding: 70px 20px;
+      background: 
+        linear-gradient(rgba(128, 0, 0, 0.7), rgba(128, 0, 0, 0.7)),
+        url('../images/EAChead.jpg') center/cover no-repeat;
+      background-blend-mode: overlay;
+      background-position: center 78%;
+    }
+
+    .library-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .library-hero .library-logo {
+      position: relative;
+      z-index: 1;
+      width: 180px;
+      margin-bottom: 15px;
+    }
+
+    .library-hero h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    .certificate-card {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      max-width: 900px;
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    .certificate-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      text-align: center;
+      background: var(--eac-maroon);
+      color: #fff;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--eac-gold);
+      color: #333;
+      font-size: 1.8rem;
+      padding: 15px 18px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      transition: transform 0.4s ease, box-shadow 0.3s ease, background 0.3s ease;
+      z-index: 999;
+      animation: pulse 2.5s infinite;
+    }
+
+    .home-button:hover {
+      background: var(--eac-maroon);
+      color: #fff;
+      transform: translateY(-5px) scale(1.1) rotate(-10deg);
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="library-hero fade-in">
+    <img src="../images/EAC.png" alt="EAC Logo" class="library-logo" />
+    <h1>Certificate of Completion</h1>
+  </section>
+
+  <main class="library-content slide-in">
+    <article class="certificate-card">
+      <img src="../images/COC2.jpg" alt="Certificate of Completion - EAC">
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2025 My Portfolio | EAC
+  </footer>
+
+  <a href="library-2.html" class="home-button" title="Back to EAC">⬅️</a>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 2 Reflection | EAC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --eac-maroon: #800000;
+      --eac-gold: #FFD700;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #FFF8F4 0%, #FFFFFF 100%);
+      color: #333;
+      margin: 0;
+    }
+
+    .library-hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      min-height: 300px;
+      padding: 80px 20px;
+      background:
+        linear-gradient(rgba(128, 0, 0, 0.7), rgba(128, 0, 0, 0.7)),
+        url('../images/EAChead.jpg') center/cover no-repeat;
+      background-blend-mode: overlay;
+    }
+
+    .library-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .library-hero img {
+      position: relative;
+      z-index: 1;
+      width: 200px;
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .library-hero h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+      line-height: 1.2;
+    }
+
+    .weekly-card {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      max-width: 900px;
+      margin: 50px auto;
+      line-height: 1.7;
+      animation: fade-in 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    .weekly-card h2 {
+      color: var(--eac-maroon);
+      margin-bottom: 20px;
+    }
+
+    .weekly-card p {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background: var(--eac-maroon);
+      color: #fff;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--eac-gold);
+      color: #333;
+      font-size: 1.8rem;
+      padding: 15px 18px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      transition: transform 0.4s ease, box-shadow 0.3s ease, background 0.3s ease;
+      z-index: 999;
+      animation: pulse 2.5s infinite;
+    }
+
+    .home-button:hover {
+      background: var(--eac-maroon);
+      color: #fff;
+      transform: translateY(-5px) scale(1.1) rotate(-10deg);
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+    }
+
+    @keyframes fade-in {
+      to { opacity: 1; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <section class="library-hero">
+    <img src="../images/EAC.png" alt="EAC Logo" class="library-logo" />
+    <h1>Week 2 Reflection</h1>
+  </section>
+
+  <main class="library-content">
+    <article class="weekly-card">
+      <h2>A. Meaningful Experiences</h2>
+      <p>
+        This week, I genuinely felt like I was making a direct and helpful difference for the library. Recataloging reference books for nursing and medicine students made me feel like I was directly assisting both librarians and the students who rely on these resources. Although I was nervous, distributing surveys and speaking with students about library improvements proved to be a valuable experience in patron interaction. I was also shocked to encounter some negative attitudes when asking students to minimize noise, but I focused on maintaining a calm. Furthermore, I greatly appreciate how easily Mitch and I could ask staff questions and receive clear explanations, which significantly enhanced our learning. These interactions provided a deeper understanding of both the technical and interpersonal aspects of our internships.
+      </p>
+
+      <h2>B. Lessons Learned</h2>
+      <p>
+        One of the key lessons I learned this week is the importance of staying calm and patient when things don't go as planned, especially when students are not cooperative well, internet connections are slow, and the Koha system isn't functioning well. I realized that sometimes you just have to wait for a while and keep going, rather than getting frustrated. Hearing student feedback, even complaints about the library's entrance/exit doors or noise, made me realize how crucial it is to actively listen to our users. Their input can be the best source for identifying areas for improvement and understanding patrons' real needs.
+      </p>
+
+      <h2>C. Best Practices and Features of the Library</h2>
+      <p>
+        During my internships at EAC, I observed that the library maintains excellent organization, particularly by recataloging old reference books for continued and easy use. I truly appreciate that they actively seek student feedback through surveys, which clearly demonstrates their commitment to improving the library for everyone. The staff's consistent willingness to answer our questions has genuinely impacted me. I also want to highlight the respectful relationship between the librarians and users of different nationalities, they treat everyone equally and without biases.
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2025 My Portfolio | EAC
+  </footer>
+
+  <a href="weekly.html" class="home-button" title="Back to Journal">⬅️</a>
+
+</body>
+</html>
