@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 2 Reflection | NCCA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ncca-blue: #004080;
+      --ncca-gold: #F4C430;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #F4F8FF 0%, #FFFFFF 100%);
+      color: #333;
+      margin: 0;
+    }
+
+    .library-hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      min-height: 300px;
+      padding: 80px 20px;
+      background:
+        linear-gradient(rgba(0, 64, 128, 0.6), rgba(0, 64, 128, 0.6)),
+        url('../images/NCCAhead.jpg') center/cover no-repeat;
+      background-blend-mode: overlay;
+    }
+
+    .library-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .library-hero img {
+      position: relative;
+      z-index: 1;
+      width: 200px;
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .library-hero h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+      line-height: 1.2;
+    }
+
+    .weekly-card {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      max-width: 900px;
+      margin: 50px auto;
+      line-height: 1.7;
+      animation: fade-in 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    .weekly-card h2 {
+      color: var(--ncca-blue);
+      margin-bottom: 20px;
+    }
+
+    .weekly-card h3 {
+      color: var(--ncca-blue);
+      margin-top: 30px;
+    }
+
+    .weekly-card p {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background: var(--ncca-blue);
+      color: #fff;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--ncca-gold);
+      color: #333;
+      font-size: 1.8rem;
+      padding: 15px 18px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      transition: transform 0.4s ease, box-shadow 0.3s ease, background 0.3s ease;
+      z-index: 999;
+      animation: pulse 2.5s infinite;
+    }
+
+    .home-button:hover {
+      background: var(--ncca-blue);
+      color: #fff;
+      transform: translateY(-5px) scale(1.1) rotate(-10deg);
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(244, 196, 48, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(244, 196, 48, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(244, 196, 48, 0); }
+    }
+
+    @keyframes fade-in {
+      to { opacity: 1; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <section class="library-hero">
+    <img src="../images/NCCA.png" alt="NCCA Logo" class="library-logo" />
+    <h1>Week 2 Reflection</h1>
+  </section>
+
+  <main class="library-content">
+    <article class="weekly-card">
+      <h2>A. Meaningful Experiences</h2>
+      <p>
+        As the first week comes to a near end, I'd like to share some of the highlights of my second week as an intern at the NCCA Library. In the most welcoming ways possible, Monday was a bit of a sensory overload. The opening ceremony of Arts Month felt like a festival, and the parade was colorful. The Museo de Intramuros, which is within walking distance, is the next place we visited before the parade ended. To add, the supervisor in the records section was introduced to us and we're very surprised because we didn't expect that Miss Jeyd is very young to be a head of their section. But still, she had all the qualifications for the position, she was very approachable and bubbly! She also gave us handouts or NAP readings for us to read and review in order to do our tasks in the records section.
+      </p>
+
+      <h2>B. Lesson Learned</h2>
+      <p>
+        Week two of our internship, I am now very aware of the importance of balancing cultural engagement with core library operations. I also learned that attending events like the National Arts Month Parade provides valuable context for the library's role within the community. To add, I also remembered that our adviser told us to always ask if we want to know something, and that's what I did. With that, I learned that we should also know the collections that the library has. Furthermore, our librarian taught us the meticulous tasks, like CD labeling and document routing, are essential for smooth library function, highlighting the value of attention to detail.
+      </p>
+      <p>
+        Also the technical tasks, such as accessioning and inventory, solidified my understanding of library systems and procedures. Shelf reading and tracking missing items emphasized the need for consistent monitoring and record-keeping. I realized that effective time management is crucial for handling a variety of tasks efficiently.
+      </p>
+
+      <h2>C. Best Practices and Best Features of the Library</h2>
+      <p>
+        This week, I've seen firsthand some of the best practices that make the NCCA Special library function so well. We really connect with the community, like when we joined the National Arts Month Parade and the Museo de Intramuros opening. We've also been involved in the detailed technical work, like labeling CDs for the terminal reports and accessioning new books, which keeps the holdings organized.
+      </p>
+      <p>
+        To add, one of the best experiences that we encountered is that we cater a kid and we are also able to provide for her needs. With that, I feel like we are trained for a school library client set up. I've also seen how important it is to track book usage and ensure borrowed items are returned. Plus, we're always trying to improve our communication, as seen in the AVP creation and editing I helped with.
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2025 My Portfolio | NCCA
+  </footer>
+
+  <a href="weekly.html" class="home-button" title="Back to Journal">⬅️</a>
+
+</body>
+</html>
