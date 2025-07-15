@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 3 Reflection Journal | National Library of the Philippines</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/library-4.css">
+  <style>
+    :root {
+      --ph-blue: #0038A8;
+      --ph-red: #CE1126;
+      --ph-yellow: #FFD700;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      --shadow-hover: 0 20px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #fdfdfd;
+      margin: 0;
+      color: #333;
+      text-align: center;
+    }
+
+    .library-hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      min-height: 320px;
+      padding: 80px 20px;
+      background:
+        linear-gradient(135deg, rgba(0, 56, 168, 0.7) 0%, rgba(206, 17, 38, 0.7) 50%, rgba(255, 215, 0, 0.7) 100%),
+        url('../images/NLPhead.jpg') center/cover no-repeat;
+      background-blend-mode: overlay;
+    }
+
+    .library-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .library-hero * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .library-logo {
+      width: 200px;
+      max-width: 200px;
+      margin-bottom: 20px;
+      animation: fadeInDown 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    .library-hero h1 {
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+      line-height: 1.2;
+      animation: fadeInUp 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    .library-hero p {
+      font-size: 1.1rem;
+      margin: 0;
+      max-width: 90%;
+      line-height: 1.4;
+      animation: fadeInUp 2s ease forwards;
+      opacity: 0;
+    }
+
+    .journal-content {
+      max-width: 900px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      line-height: 1.7;
+      text-align: left;
+    }
+
+    .journal-content h2 {
+      color: var(--ph-blue);
+      margin-top: 0;
+    }
+
+    footer {
+      background: var(--ph-blue);
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--ph-yellow);
+      color: #333;
+      font-size: 1.8rem;
+      padding: 15px 18px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      transition: transform 0.4s ease, box-shadow 0.3s ease, background 0.3s ease;
+      z-index: 999;
+      animation: pulse 2.5s infinite;
+    }
+
+    .home-button:hover {
+      background: var(--ph-red);
+      color: #fff;
+      transform: translateY(-5px) scale(1.1) rotate(-10deg);
+      box-shadow: var(--shadow-hover);
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+    }
+
+    @keyframes fadeInDown {
+      0% { transform: translateY(-20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      0% { transform: translateY(20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="library-hero">
+    <img src="../images/NLP.png" alt="NLP Logo" class="library-logo" />
+    <h1>Week 3 Reflection Journal</h1>
+  </section>
+
+  <main class="journal-content">
+    <h2>A. Meaningful Experiences</h2>
+    <p>Our 3rd week we are assigned to the Reader Services/Circulation area. It was great because I got to check books in and out, and help people use the computer system to find books. A big highlight was spending time in the multimedia section and seeing microfilms physically. These are special old collections, like newspapers and rare books, kept safe in a cold room. Also, a moment that really stuck with me was when a professor, who has been coming to the library for a long time, asked us how we could help towns that don't have libraries. It's like an interview. With that, this made me think a lot about how important our work is for everyone.</p>
+
+    <h2>B. Lessons Learned</h2>
+    <p>The biggest thing I learned this week is how important it is to be flexible with every task assigned to me. I learned that whether I was checking books in and out, keeping track of books, or re-shelving books, I still needed to be careful and do it with purpose. I also learned how important it is to communicate clearly and think critically when helping patrons with things inside the library. Overall, this week really showed me that being a librarian is about more than just knowing books, it's about being flexible, patient, a fast thinker, and very careful in everything I do.</p>
+
+    <h2>C. Best Practices and Best Features of the Library</h2>
+    <p>In our 3rd week, I literally learned that the best practices and features of The National Library of the Philippines (NLP) is truly great at keeping Filipiniana materials, microfilms, theses, and serials safe. They also use technology to digitize fragile materials to make them accessible to clients, as they hold significant value to the institutions. I also observed that the storage for microfilms was air-conditioned 24/7, which helps maintain the microfilms' physical condition. It shows that they are also focused on preserving their rare materials. I also found the NLP's features, such as the book elevator and the pager system at the front desk, amusing, as they make the procedure easier and faster for people to get the books they've asked for. Also, the way the Filipiniana Division keeps its huge collection with great care. Lastly, the Public Library Division's work to share resources and reach out to communities is a wonderful example of how the NLP helps and supports other libraries and people all over the country.</p>
+  </main>
+
+  <footer>
+    &copy; 2025 My Portfolio | NLP
+  </footer>
+
+  <a href="weekly.html" class="home-button" title="Back to Weekly Journal">⬅️</a>
+
+</body>
+</html>

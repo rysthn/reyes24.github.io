@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Appendices | NLP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/library-4.css">
+
+  <style>
+    :root {
+      --ph-blue: #0038A8;
+      --ph-red: #CE1126;
+      --ph-yellow: #FFD700;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      --shadow-hover: 0 20px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #fdfdfd;
+      margin: 0;
+      color: #333;
+    }
+
+    .library-hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      min-height: 320px;
+      padding: 80px 20px;
+      background:
+        linear-gradient(135deg, rgba(0, 56, 168, 0.7) 0%, rgba(206, 17, 38, 0.7) 50%, rgba(255, 215, 0, 0.7) 100%),
+        url('../images/NLPhead.jpg') center center/cover no-repeat;
+      background-blend-mode: overlay;
+    }
+
+    .library-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .library-hero * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .library-hero img {
+      width: 200px;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fade-in-down 1.5s ease forwards;
+    }
+
+    .library-hero h1 {
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+      line-height: 1.2;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+      opacity: 0;
+      animation: fade-in-up 2s ease forwards;
+      animation-delay: 0.3s;
+    }
+
+    .library-hero p {
+      font-size: 1.1rem;
+      margin: 0;
+      max-width: 90%;
+      line-height: 1.4;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+      opacity: 0;
+      animation: fade-in-up 2.5s ease forwards;
+      animation-delay: 0.6s;
+    }
+
+    .appendices-section {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      max-width: 1000px;
+      margin: 50px auto;
+      line-height: 1.7;
+    }
+
+    .appendices-section h2 {
+      color: var(--ph-blue);
+      margin-bottom: 20px;
+    }
+
+       .photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  justify-items: center; /* Center single image */
+}
+
+.photo-grid figure {
+  margin: 0;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+  width: 250px;              /* 🟢 fixed width */
+  aspect-ratio: 1 / 1;       /* 🟢 fixed square */
+}
+
+.photo-grid figure:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Crop to fill square */
+  display: block;
+}
+
+.photo-grid figcaption {
+  padding: 10px;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #555;
+}
+    footer {
+      text-align: center;
+      background: var(--ph-blue);
+      color: #fff;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--ph-yellow);
+      color: #333;
+      font-size: 1.8rem;
+      padding: 15px 18px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      transition: transform 0.4s ease, box-shadow 0.3s ease, background 0.3s ease;
+      z-index: 999;
+      animation: pulse 2.5s infinite;
+    }
+
+    .home-button:hover {
+      background: var(--ph-red);
+      color: #fff;
+      transform: translateY(-5px) scale(1.1) rotate(-10deg);
+    }
+
+    @keyframes fade-in-down {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fade-in-up {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="library-hero fade-in">
+    <img src="../images/NLP.png" alt="NLP Logo">
+    <h1>Daily Accomplishments</h1>
+  </section>
+
+  <main>
+    <section class="appendices-section">
+      <h2> WEEK 1: June 10 – 13, 2025</h2>
+
+      <h3> June 10, Tuesday</h3>
+      <ul>
+        <li>First day at National Library of the Philippines (NLP).</li>
+        <li>Group 1 assigned to Collection Development Division (CDD), responsible for acquisition and book processing.</li>
+        <li>Ma'am Elaine, Librarian I and head of CDD, provided orientation covering:
+          <ul>
+            <li>Repositories of Filipiniana records.</li>
+            <li>Collection development.</li>
+            <li>Acquisition process at NLP.</li>
+            <li>Two sections: Acquisition (contacting suppliers) and Technical/Mechanical (collating, barcoding materials).</li>
+            <li>Five modes of acquisition: Purchase, donation, gift and exchange, legal deposit (mandatory 2 best copies per PD 812), and copyright deposit.</li>
+            <li>NLP's acquisition follows government procurement law.</li>
+            <li>Modes of procurement: Public bidding, direct contracting, small-value procurement.</li>
+            <li>Purpose and importance of CDD and NLP’s mandates.</li>
+          </ul>
+        </li>
+        <li>Tasked with manual/technical processing of donated books (stamping accession numbers).</li>
+        <li>Stamped 25 reference books.</li>
+        <li>Began encoding books into the KOHA system; nearly half of the 25 books encoded.</li>
+      </ul>
+
+      <div class="photo-grid fade-in">
+  <figure><img src="../images/NLPAPP/10/photo_1_2025-07-14_21-41-09.jpg"></figure>
+  <figure><img src="../images/NLPAPP/10/photo_2_2025-07-14_21-41-09.jpg"></figure>
+  <figure><img src="../images/NLPAPP/10/photo_3_2025-07-14_21-41-09.jpg"></figure>
+  <figure><img src="../images/NLPAPP/10/photo_4_2025-07-14_21-41-09.jpg"></figure>
+  <figure><img src="../images/NLPAPP/10/photo_5_2025-07-14_21-41-09.jpg"></figure>
+  <figure><img src="../images/NLPAPP/10/photo_6_2025-07-14_21-41-09.jpg"></figure>
+</div>
+
+     <h3> June 11, Wednesday</h3>
+<ul>
+  <li>Continued and finished encoding remaining books into KOHA.</li>
+  <li>Ma'am Leah assigned similar tasks: manual processing (stamping accession numbers) and KOHA encoding.</li>
+  <li>Finished 25 more books.</li>
+</ul>
+
+<div class="photo-grid fade-in">
+  <figure><img src="../images/NLPAPP/11/photo_1_2025-07-14_21-41-31.jpg"></figure>
+  <figure><img src="../images/NLPAPP/11/photo_2_2025-07-14_21-41-31.jpg"></figure>
+</div>
+
+<h3>June 13, Friday</h3>
+<ul>
+  <li>Assigned to the Cataloging Division, supervised by Ms. Joanna Dumagan.</li>
+  <li>Oriented on creating "p-slips" for catalog cards.</li>
+  <li>Given 5 children's books each for cataloging practice.</li>
+  <li>Taught/reviewed subject selection, Dewey Decimal Classification (DDC) usage, and book cataloging.</li>
+  <li>Recalled 3x5 card cataloging despite prior Koha use.</li>
+  <li>Finding exact subjects was challenging but exciting, enhancing learning.</li>
+  <li>In the afternoon, helped cut stickers and artwork after finishing cataloging tasks.</li>
+</ul>
+
+<div class="photo-grid fade-in">
+  <figure><img src="../images/NLPAPP/13/photo_1_2025-07-14_21-42-03.jpg"></figure>
+  <figure><img src="../images/NLPAPP/13/photo_2_2025-07-14_21-42-03.jpg"></figure>
+  <figure><img src="../images/NLPAPP/13/photo_3_2025-07-14_21-42-03.jpg"></figure>
+  <figure><img src="../images/NLPAPP/13/photo_4_2025-07-14_21-42-03.jpg"></figure>
+  <figure><img src="../images/NLPAPP/13/photo_5_2025-07-14_21-42-03.jpg"></figure>
+  <figure><img src="../images/NLPAPP/13/photo_6_2025-07-14_21-42-03.jpg"></figure>
+</div>
+</section>
+<section class="appendices-section">
+  <h2> WEEK 2: June 16 – 20, 2025</h2>
+
+  <h3>June 16, Monday</h3>
+  <ul>
+    <li>Still in the Cataloging Department under Ma'am Joann.</li>
+    <li>Assigned Filipiniana books to catalog; received 7 titles.</li>
+    <li>Found it difficult to find bibliographic details and classification numbers in LC for 2024/2025 copyrighted books (original cataloging).</li>
+    <li>Original cataloging process: Wrote bibliographic details on p-slip, found suitable subjects, built call numbers.</li>
+    <li>Challenging but recalled creating call numbers using DDC and LCSH.</li>
+    <li>Finished 5 books; 2 needed only call numbers.</li>
+  </ul>
+  <div class="photo-grid fade-in">
+  <figure><img src="../images/NLPAPP/16/photo_1_2025-07-14_21-42-36.jpg"></figure>
+  <figure><img src="../images/NLPAPP/16/photo_2_2025-07-14_21-42-36.jpg"></figure>
+  <figure><img src="../images/NLPAPP/16/photo_3_2025-07-14_21-42-36.jpg"></figure>
+  <figure><img src="../images/NLPAPP/16/photo_4_2025-07-14_21-42-36.jpg"></figure>
+  <figure><img src="../images/NLPAPP/16/photo_5_2025-07-14_21-42-36.jpg"></figure>
+</div>
+
+  <h3> June 17, Tuesday</h3>
+  <ul>
+    <li>Arrived early to finish remaining cataloging tasks and recheck work.</li>
+    <li>Ma'am Johanna gathered interns and taught encoding cataloged books (children's, story, fiction, non-fiction Filipiniana and new collections) into NLP's Koha system.</li>
+    <li>Found encoding difficult initially, asked co-interns and supervisors for help.</li>
+    <li>Co-interns were a great help with assigning call numbers, subject headings, and LC classification, aiding recall of cataloging tools.</li>
+    <li>Despite confusion, did my best to finish on time.</li>
+    <li>Difficulty due to no personal laptop (co-intern lent tablet).</li>
+    <li>No signal, needed daily Wi-Fi vouchers.</li>
+  </ul>
+  <div class="photo-grid fade-in">
+  <figure><img src="../images/NLPAPP/17/photo_1_2025-07-14_21-42-59.jpg"></figure>
+  <figure><img src="../images/NLPAPP/17/photo_2_2025-07-14_21-42-59.jpg"></figure>
+  <figure><img src="../images/NLPAPP/17/photo_3_2025-07-14_21-42-59.jpg"></figure>
+  <figure><img src="../images/NLPAPP/17/photo_4_2025-07-14_21-42-59.jpg"></figure>
+  <figure><img src="../images/NLPAPP/17/photo_5_2025-07-14_21-42-59.jpg"></figure>
+  <figure><img src="../images/NLPAPP/17/photo_6_2025-07-14_21-42-59.jpg"></figure>
+</div>
+
+  <h3> June 18, Wednesday</h3>
+  <ul>
+    <li>Last day in the Cataloging Section, still assigned cataloging tasks.</li>
+    <li>Assigned 6-7 Filipiniana book titles per intern.</li>
+    <li>Cataloging process: Prepared p-slip, wrote bibliographic details first.</li>
+    <li>Found 3 subject headings per book title.</li>
+    <li>Followed with DDC (21st edition) and LC classification number search.</li>
+    <li>Had difficulties building numbers for call numbers but finished.</li>
+  </ul>
+  <div class="photo-grid fade-in">
+  <figure><img src="../images/NLPAPP/18/photo_1_2025-07-14_21-43-23.jpg"></figure>
+  <figure><img src="../images/NLPAPP/18/photo_2_2025-07-14_21-43-23.jpg"></figure>
+  <figure><img src="../images/NLPAPP/18/photo_3_2025-07-14_21-43-23.jpg"></figure>
+  <figure><img src="../images/NLPAPP/18/photo_4_2025-07-14_21-43-23.jpg"></figure>
+  <figure><img src="../images/NLPAPP/18/photo_5_2025-07-14_21-43-23.jpg"></figure>
+  <figure><img src="../images/NLPAPP/18/photo_6_2025-07-14_21-43-23.jpg"></figure>
+</div>
+
+  <h3> June 19, Thursday</h3>
+  <ul>
+    <li>Orientation by Sir Anthony on indexing historical data in the reference division.</li>
+    <li>Oriented by Ma'am Melody on indexing historical data from different barangays/cities.</li>
+    <li>Given trial sheets and worksheets for uncontrolled indexing.</li>
+    <li>Miss Jade taught additional information.</li>
+    <li>Example used: A barrio in Batangas (Ikik) for indexing.</li>
+    <li>Confusing at first, but finished and rated work individually.</li>
+    <li>Finished worksheet 1 and 2 before 2 PM; supervisor discussed answers and conducted checking, asking for self-evaluation.</li>
+    <li>Received new worksheets from The Manila Bulletin and Gazette (more challenging for first-time indexing).</li>
+    <li>Ma'am Jade guided us. Worksheets to be continued the next day.</li>
+    <li>Participated in a 9 AM earthquake drill.</li>
+    <li>Lots of productive learning this day.</li>
+  </ul>
+  <div class="photo-grid fade-in">
+  <figure><img src="../images/NLPAPP/19/photo_1_2025-07-14_21-45-14.jpg"></figure>
+  <figure><img src="../images/NLPAPP/19/photo_2_2025-07-14_21-45-14.jpg"></figure>
+  <figure><img src="../images/NLPAPP/19/photo_3_2025-07-14_21-45-14.jpg"></figure>
+  <figure><img src="../images/NLPAPP/19/photo_4_2025-07-14_21-45-14.jpg"></figure>
+  <figure><img src="../images/NLPAPP/19/photo_5_2025-07-14_21-45-14.jpg"></figure>
+  <figure><img src="../images/NLPAPP/19/photo_6_2025-07-14_21-45-14.jpg"></figure>
+  <figure><img src="../images/NLPAPP/19/photo_7_2025-07-14_21-45-14.jpg"></figure>
+  <figure><img src="../images/NLPAPP/19/photo_8_2025-07-14_21-45-14.jpg"></figure>
+</div>
+
+  <h3> June 20, Friday</h3>
+  <ul>
+    <li>Finished worksheet 3–5.</li>
+    <li>Ma'am Gwen handled checking tasks and guided us (Ma'am Jade absent).</li>
+    <li>Evaluated our work through the worksheets.</li>
+    <li>Oriented on encoding HDP (Historical Data Project) materials into KOHA.</li>
+    <li>Taught how to create records in Koha, including MARC tags and subfields.</li>
+    <li>Afternoon: Tasked by supervisors to encode/create authority cards for HDP (e.g., Bigaa, Bulacan).</li>
+    <li>Found it confusing/difficult initially as it was our first time, but completed it on time.</li>
+    <li>A librarian conducted a short exit interview (Ma'am Jade still absent).</li>
+    <li>Overall, two very productive days in the Bibliographic Section Division, with significant learning.</li>
+  </ul>
+ <div class="photo-grid fade-in">
+  <figure><img src="../images/NLPAPP/20/photo_1_2025-07-14_21-45-29.jpg"></figure>
+  <figure><img src="../images/NLPAPP/20/photo_2_2025-07-14_21-45-29.jpg"></figure>
+  <figure><img src="../images/NLPAPP/20/photo_3_2025-07-14_21-45-29.jpg"></figure>
+  <figure><img src="../images/NLPAPP/20/photo_4_2025-07-14_21-45-29.jpg"></figure>
+  <figure><img src="../images/NLPAPP/20/photo_5_2025-07-14_21-45-29.jpg"></figure>
+  <figure><img src="../images/NLPAPP/20/photo_6_2025-07-14_21-45-29.jpg"></figure>
+</div>
+</section>
+<section class="appendices-section">
+  <h2>WEEK 3: June 23 – 27, 2025</h2>
+
+  <h3> June 23, Monday</h3>
+  <ul>
+    <li>Assigned to the Readers Services/Circulation Division.</li>
+    <li>Oriented by Ma'am Xenia and Sir Wilbur on:
+      <ul>
+        <li>Check-in and check-out procedures for books.</li>
+        <li>How readers log in to OPAC for reserving and borrowing books.</li>
+        <li>Handling patron concerns.</li>
+      </ul>
+    </li>
+    <li>Sir Wilbur assigned me to the Multimedia Section for the morning (8 AM - 12 PM).</li>
+    <li>Ma'am NAD guided and toured me inside the microforms storage, which held serials, Filipiniana, and rare materials.</li>
+    <li>Amazed to see microforms for the first time; noted the 24/7 air-conditioned storage for preservation.</li>
+    <li>Ma'am DINA taught me how to use the microform viewer.</li>
+    <li>Main task was inventory, but also assisted clients requesting microforms.</li>
+    <li>Afternoon: Performed Readers Services duty, including check-in/check-out of reserved books.</li>
+    <li>Enjoyed using the book elevator from the stockroom to the front desk.</li>
+    <li>Clients used pagers as signals for retrieved reserved books.</li>
+    <li>A professor and long-time NLP reader asked about our (PNU interns') impact on communities without libraries.</li>
+    <li>Assisted many clients with various needs, including Filipiniana books.</li>
+    <li>Encountered and learned to handle client problems (e.g., wrong login credentials, incorrect reservations).</li>
+  </ul>
+ <div class="photo-grid fade-in">
+  <figure><img src="../images/NLPAPP/23/photo_1_2025-07-14_21-45-54.jpg"></figure>
+  <figure><img src="../images/NLPAPP/23/photo_2_2025-07-14_21-45-54.jpg"></figure>
+  <figure><img src="../images/NLPAPP/23/photo_3_2025-07-14_21-45-54.jpg"></figure>
+  <figure><img src="../images/NLPAPP/23/photo_4_2025-07-14_21-45-54.jpg"></figure>
+  <figure><img src="../images/NLPAPP/23/photo_5_2025-07-14_21-45-54.jpg"></figure>
+  <figure><img src="../images/NLPAPP/23/photo_6_2025-07-14_21-45-54.jpg"></figure>
+  <figure><img src="../images/NLPAPP/23/photo_7_2025-07-14_21-45-54.jpg"></figure>
+  <figure><img src="../images/NLPAPP/23/photo_8_2025-07-14_21-45-54.jpg"></figure>
+  <figure><img src="../images/NLPAPP/23/photo_9_2025-07-14_21-45-54.jpg"></figure>
+  <figure><img src="../images/NLPAPP/23/photo_10_2025-07-14_21-45-54.jpg"></figure>
+  <figure><img src="../images/NLPAPP/23/photo_11_2025-07-14_21-45-54.jpg"></figure>
+  <figure><img src="../images/NLPAPP/23/photo_12_2025-07-14_21-45-54.jpg"></figure>
+</div>
+
+
+  <h3> June 25, Wednesday</h3>
+  <ul>
+    <li>Assigned to the Filipiniana Division.</li>
+    <li>Happy about the large group (3 groups) assigned there.</li>
+    <li>Gathered and went to the Filipiniana stockroom (also housing theses).</li>
+    <li>Tasked with shelving, re-shelving, and counting theses.</li>
+    <li>Paired with Kim; worked efficiently and cooperatively.</li>
+    <li>Shelved Filipiniana books and theses.</li>
+    <li>Counted approximately 600-700 thesis books.</li>
+    <li>Downside: Dust on shelves required frequent hand washing after shelving.</li>
+  </ul>
+ <div class="photo-grid fade-in">
+  <figure><img src="../images/NLPAPP/25/photo_1_2025-07-14_21-46-14.jpg"></figure>
+  <figure><img src="../images/NLPAPP/25/photo_2_2025-07-14_21-46-14.jpg"></figure>
+  <figure><img src="../images/NLPAPP/25/photo_3_2025-07-14_21-46-14.jpg"></figure>
+  <figure><img src="../images/NLPAPP/25/photo_4_2025-07-14_21-46-14.jpg"></figure>
+  <figure><img src="../images/NLPAPP/25/photo_5_2025-07-14_21-46-14.jpg"></figure>
+  <figure><img src="../images/NLPAPP/25/photo_6_2025-07-14_21-46-14.jpg"></figure>
+</div>
+
+  <h3> June 26, Thursday</h3>
+  <ul>
+    <li>Second and last day in the Filipiniana Division, Thesis Section.</li>
+    <li>Morning: Assigned to re-shelving and counting thesis books again; enjoyed the task despite dust.</li>
+    <li>Afternoon: Assigned to the retrieving area.</li>
+    <li>Monitored for dissertation/thesis reservations.</li>
+    <li>Located requested items on shelves.</li>
+    <li>Used "found" or "not found" indicators to inform the front desk.</li>
+    <li>Enjoyed using the book elevator to send reserved books to the 2nd floor.</li>
+    <li>Overwhelmed by the large number of reservations but learned a lot about shelving and finding resources.</li>
+    <li>Sir Sonny guided and helped us.</li>
+  </ul>
+ <div class="photo-grid fade-in">
+  <figure><img src="../images/NLPAPP/26/photo_1_2025-07-14_21-46-25.jpg"></figure>
+  <figure><img src="../images/NLPAPP/26/photo_2_2025-07-14_21-46-25.jpg"></figure>
+  <figure><img src="../images/NLPAPP/26/photo_3_2025-07-14_21-46-25.jpg"></figure>
+  <figure><img src="../images/NLPAPP/26/photo_4_2025-07-14_21-46-25.jpg"></figure>
+  <figure><img src="../images/NLPAPP/26/photo_5_2025-07-14_21-46-25.jpg"></figure>
+  <figure><img src="../images/NLPAPP/26/photo_6_2025-07-14_21-46-25.jpg"></figure>
+</div>
+
+  <h3>June 27, Friday</h3>
+  <ul>
+    <li>First day in the PLD (Public Library Division).</li>
+    <li>Headed by Ms. Bless Velasco; oriented by Ma'am Rhoda on PLD's purpose and operations.</li>
+    <li>Divided into different tasks (allotment, training, etc.).</li>
+    <li>Assigned to allotment with Kuya Ivan, guided by Ms. Amber.</li>
+    <li>Ms. Amber discussed tasks.</li>
+    <li>Toured the stockroom containing books, globes, and maps given to affiliated libraries and seminar attendees.</li>
+    <li>Tasked with chronologically arranging reports of books received by libraries; found it confusing but managed to finish it on time.</li>
+  </ul>
+  <div class="photo-grid fade-in">
+  <figure><img src="../images/NLPAPP/27/photo_1_2025-07-14_21-46-35.jpg"></figure>
+  <figure><img src="../images/NLPAPP/27/photo_2_2025-07-14_21-46-35.jpg"></figure>
+  <figure><img src="../images/NLPAPP/27/photo_3_2025-07-14_21-46-35.jpg"></figure>
+  <figure><img src="../images/NLPAPP/27/photo_4_2025-07-14_21-46-35.jpg"></figure>
+  <figure><img src="../images/NLPAPP/27/photo_5_2025-07-14_21-46-35.jpg"></figure>
+  <figure><img src="../images/NLPAPP/27/photo_6_2025-07-14_21-46-35.jpg"></figure>
+</div>
+</section>
+<section class="appendices-section">
+  <h2> WEEK 4: June 30 – July 3, 2025</h2>
+
+  <h3> June 30, Monday</h3>
+  <ul>
+    <li>Last day in the PLD (Public Library Division) section.</li>
+    <li>Attended the flag ceremony.</li>
+    <li>Proceeded to the assigned work area: the stockroom, along with Ma'am Leah of CDD.</li>
+    <li>Ma'am Amber assigned a new task: cross-checking property, accounting, and COA documents.</li>
+    <li>Double-checked documents against the list of libraries in the Philippines that received books from NLP.</li>
+    <li>Finished the cross-checking for the transfer report.</li>
+  </ul>
+  <div class="photo-grid fade-in">
+  <figure><img src="../images/NLPAPP/30/photo_1_2025-07-14_21-46-48.jpg"></figure>
+  <figure><img src="../images/NLPAPP/30/photo_2_2025-07-14_21-46-48.jpg"></figure>
+  <figure><img src="../images/NLPAPP/30/photo_3_2025-07-14_21-46-48.jpg"></figure>
+  <figure><img src="../images/NLPAPP/30/photo_4_2025-07-14_21-46-48.jpg"></figure>
+</div>
+
+  <h3>July 1, Tuesday</h3>
+  <ul>
+    <li>First day in the Research and Publications Division (RPD).</li>
+    <li>Oriented by Sir Jonathan and Ma'am Melody on RPD's functions, focusing on research, publications, and NLP promotions (e.g., events).</li>
+    <li>Divided into three groups of two members; I was with Jelmie.</li>
+    <li>Tasked with creating promotional materials for chosen August events.</li>
+    <li>Brainstormed and decided on two outputs: a pubmat poster for NLP's Anniversary and a video promotion for History Month.</li>
+    <li>Listed content and book needs for the video, then located and borrowed books using OPAC.</li>
+    <li>Due to time constraints, continued work the next day; drafts for both outputs were created.</li>
+    <li>Filmed 5 books for the video.</li>
+    <p> I don't have any documentations since we are too busy that time doing research for our promotional video. But here's our output. (Pubmat. and Video)<p>
+  </ul>
+  <div class="photo-grid fade-in">
+  <figure><img src="../images/NLPAPP/1-2/photo_1_2025-07-14_21-47-06.jpg"></figure>
+  <figure><img src="../images/NLPAPP/1-2/photo_2_2025-07-14_21-47-06.jpg"></figure>
+  <figure><img src="../images/NLPAPP/1-2/photo_3_2025-07-14_21-47-06.jpg"></figure>
+  <figure><img src="../images/NLPAPP/1-2/photo_4_2025-07-14_21-47-06.jpg"></figure>
+  <figure><img src="../images/NLPAPP/1-2/photo_5_2025-07-14_21-47-06.jpg"></figure>
+  <figure><img src="../images/NLPAPP/1-2/photo_6_2025-07-14_21-47-06.jpg"></figure>
+  <figure><img src="../images/NLPAPP/1-2/photo_7_2025-07-14_21-47-06.jpg"></figure>
+  <figure><img src="../images/NLPAPP/1-2/photo_8_2025-07-14_21-47-06.jpg"></figure>
+</div>
+
+  <h3> July 2, Wednesday</h3>
+  <ul>
+    <li>Last day in RPD; continued yesterday's unfinished poster and video tasks.</li>
+    <li>Returned to the Readers Service area to film/shoot our project and research additional resources.</li>
+    <li>After lunch, continued editing the poster and video for supervisor (Ms. Melody) review.</li>
+    <li>After finishing half the outputs, Ma'am Melody provided helpful feedback for improvement.</li>
+    <li>Tasks were nearly complete, just needing minor polishing before submission/upload to Google Drive.</li>
+
+  </ul>
+  <div class="photo-grid fade-in">
+  <figure><img src="../images/NLPAPP/1-2/photo_1_2025-07-14_21-47-06.jpg"></figure>
+  <figure><img src="../images/NLPAPP/1-2/photo_2_2025-07-14_21-47-06.jpg"></figure>
+  <figure><img src="../images/NLPAPP/1-2/photo_3_2025-07-14_21-47-06.jpg"></figure>
+  <figure><img src="../images/NLPAPP/1-2/photo_4_2025-07-14_21-47-06.jpg"></figure>
+  <figure><img src="../images/NLPAPP/1-2/photo_5_2025-07-14_21-47-06.jpg"></figure>
+  <figure><img src="../images/NLPAPP/1-2/photo_6_2025-07-14_21-47-06.jpg"></figure>
+  <figure><img src="../images/NLPAPP/1-2/photo_7_2025-07-14_21-47-06.jpg"></figure>
+  <figure><img src="../images/NLPAPP/1-2/photo_8_2025-07-14_21-47-06.jpg"></figure>
+</div>
+
+  <h3> July 3, Thursday</h3>
+  <ul>
+    <li>Last day of internship at NLP.</li>
+    <li>Assigned to the 3rd floor stockroom (General Books and Filipiniana) for retrieving books reserved by clients.</li>
+    <li>Also performed shelving of returned books.</li>
+    <li>Handled by Ms. Ana in the General Books stockroom.</li>
+    <li>Handled approximately 10-11 book retrievals for the day.</li>
+  </ul>
+  <div class="photo-grid fade-in">
+  <figure><img src="../images/NLPAPP/3/photo_1_2025-07-14_21-47-26.jpg"></figure>
+  <figure><img src="../images/NLPAPP/3/photo_2_2025-07-14_21-47-26.jpg"></figure>
+  <figure><img src="../images/NLPAPP/3/photo_3_2025-07-14_21-47-26.jpg"></figure>
+  <figure><img src="../images/NLPAPP/3/photo_4_2025-07-14_21-47-26.jpg"></figure>
+  <figure><img src="../images/NLPAPP/3/photo_5_2025-07-14_21-47-26.jpg"></figure>
+  <figure><img src="../images/NLPAPP/3/photo_6_2025-07-14_21-47-26.jpg"></figure>
+</div>
+</section>
+
+
+
+  </main>
+
+  <footer>
+    &copy; 2025 My Portfolio | NLP
+  </footer>
+
+  <a href="../index.html" class="home-button" title="Back to Home">⬅️</a>
+
+</body>
+</html>

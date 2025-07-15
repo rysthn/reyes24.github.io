@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 2 Reflection Journal | National Library of the Philippines</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/library-4.css">
+  <style>
+    :root {
+      --ph-blue: #0038A8;
+      --ph-red: #CE1126;
+      --ph-yellow: #FFD700;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      --shadow-hover: 0 20px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #fdfdfd;
+      margin: 0;
+      text-align: center;
+      color: #333;
+    }
+
+    .library-hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      min-height: 320px;
+      padding: 80px 20px;
+      text-align: center;
+      background:
+        linear-gradient(135deg, rgba(0, 56, 168, 0.7) 0%, rgba(206, 17, 38, 0.7) 50%, rgba(255, 215, 0, 0.7) 100%),
+        url('../images/NLPhead.jpg') center/cover no-repeat;
+      background-blend-mode: overlay;
+    }
+
+    .library-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .library-hero * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .library-logo {
+      width: 200px;
+      max-width: 200px;
+      margin-bottom: 20px;
+      animation: fadeInDown 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    .library-hero h1 {
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+      line-height: 1.2;
+      animation: fadeInUp 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    .library-hero p {
+      font-size: 1.1rem;
+      margin: 0;
+      max-width: 90%;
+      line-height: 1.4;
+      animation: fadeInUp 2s ease forwards;
+      opacity: 0;
+    }
+
+    .journal-content {
+      max-width: 900px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      line-height: 1.7;
+      text-align: left;
+    }
+
+    .journal-content h2 {
+      color: var(--ph-blue);
+      margin-top: 0;
+    }
+
+    footer {
+      background: var(--ph-blue);
+      color: #fff;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--ph-yellow);
+      color: #333;
+      font-size: 1.8rem;
+      padding: 15px 18px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      transition: transform 0.4s ease, box-shadow 0.3s ease, background 0.3s ease;
+      z-index: 999;
+      animation: pulse 2.5s infinite;
+    }
+
+    .home-button:hover {
+      background: var(--ph-red);
+      color: #fff;
+      transform: translateY(-5px) scale(1.1) rotate(-10deg);
+      box-shadow: var(--shadow-hover);
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+    }
+
+    @keyframes fadeInDown {
+      0% { transform: translateY(-20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      0% { transform: translateY(20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="library-hero">
+    <img src="../images/NLP.png" alt="National Library Logo" class="library-logo" />
+    <h1>Week 2 Reflection Journal</h1>
+  </section>
+
+  <main class="journal-content">
+    <h2>A. Meaningful Experiences</h2>
+    <p>In our second week at the NLP, the tasks given to us in the Cataloging and Reference divisions were a great help in enhancing our technical skills. What stood out most was the challenge of cataloging Filipiniana books. Of course, I did my best to do it, and it felt good to figure them out on my own. On the other hand, in the Reference Division, we indexed the Historical Data Project (HDP). It was very special for me since it was about all cities and barangays in the Philippines. With that, I was very amazed and able to appreciate our history and learn more about it.</p>
+
+    <h2>B. Lessons Learned</h2>
+    <p>I learned how much working with others and being resourceful truly helps during internships. When I got confused with cataloging or using the KOHA computer system, my co-interns and supervisors were a huge help to me because they willingly shared their knowledge, and our division lent me a tablet, which showed me how important it is to have a supportive environment. I also learned to be flexible, quickly switching between different types of tasks and divisions, proving that asking questions and taking initiative are key to gaining knowledge.</p>
+
+    <h2>C. Best Practices and Best Features of the Library</h2>
+    <p>For me, the library's approach of letting us learn by doing, or practically applying what we've learned before and then adding to it, is a great practice. Also, getting to work in real setups and on hands-on tasks right away, like original cataloging, helped me understand things much faster and expanded my knowledge of librarianship. Furthermore, the way they taught us indexing, with practice sheets and clear discussions, also ensured we understood everything well. But of course, the librarians, staff, and supervisors make learning much easier and more enjoyable.</p>
+  </main>
+
+  <footer>
+    &copy; 2025 My Portfolio | NLP
+  </footer>
+
+  <a href="weekly.html" class="home-button" title="Back to Weekly Journal">⬅️</a>
+
+</body>
+</html>

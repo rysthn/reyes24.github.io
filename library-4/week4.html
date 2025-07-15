@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 4 Reflection Journal | National Library of the Philippines</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/library-3.css">
+  <style>
+    :root {
+      --ph-blue: #0038A8;
+      --ph-red: #CE1126;
+      --ph-yellow: #FFD700;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      --shadow-hover: 0 20px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #fdfdfd;
+      margin: 0;
+      color: #333;
+      text-align: center;
+    }
+
+    .library-hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      min-height: 320px;
+      padding: 80px 20px;
+      background:
+        linear-gradient(135deg, rgba(0, 56, 168, 0.7) 0%, rgba(206, 17, 38, 0.7) 50%, rgba(255, 215, 0, 0.7) 100%),
+        url('../images/NLPhead.jpg') center/cover no-repeat;
+      background-blend-mode: overlay;
+    }
+
+    .library-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .library-hero * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .library-logo {
+      width: 200px;
+      max-width: 200px;
+      margin-bottom: 20px;
+      animation: fadeInDown 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    .library-hero h1 {
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+      line-height: 1.2;
+      animation: fadeInUp 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    .library-hero p {
+      font-size: 1.1rem;
+      margin: 0;
+      max-width: 90%;
+      line-height: 1.4;
+      animation: fadeInUp 2s ease forwards;
+      opacity: 0;
+    }
+
+    .journal-content {
+      max-width: 900px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      line-height: 1.7;
+      text-align: left;
+    }
+
+    .journal-content h2 {
+      color: var(--ph-blue);
+      margin-top: 0;
+    }
+
+    footer {
+      background: var(--ph-blue);
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--ph-yellow);
+      color: #333;
+      font-size: 1.8rem;
+      padding: 15px 18px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      transition: transform 0.4s ease, box-shadow 0.3s ease, background 0.3s ease;
+      z-index: 999;
+      animation: pulse 2.5s infinite;
+    }
+
+    .home-button:hover {
+      background: var(--ph-red);
+      color: #fff;
+      transform: translateY(-5px) scale(1.1) rotate(-10deg);
+      box-shadow: var(--shadow-hover);
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+    }
+
+    @keyframes fadeInDown {
+      0% { transform: translateY(-20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      0% { transform: translateY(20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="library-hero">
+    <img src="../images/NLP.png" alt="NLP Logo" class="library-logo" />
+    <h1>Week 4 Reflection Journal</h1>
+  </section>
+
+  <main class="journal-content">
+    <h2>A. Meaningful Experiences</h2>
+    <p>Our last week at the National Library of the Philippines (NLP) truly showed me how much work and effort every division puts in to make the library function well and serve the public. My time in the Public Library Division, carefully checking important papers such as transfer reports, helped me see all the works that support libraries across our country. Furthermore, I really enjoyed moving to the Research and Publications Division and working on creative promotions for library events, which showed me the library's lively role beyond just books but also in promoting the library itself.</p>
+
+    <h2>B. Lessons Learned</h2>
+    <p>This week taught me again that a library is much more than just a place where you can find books, space, but it is also a center for information, research, and helping the public become literate citizens. During our internship I learned how important it is to be very careful with everything and to follow the instructions given to us by our supervisors, because small mistakes can affect many things and can go wrong during our internship. I also learned that promotion helps the library share information effectively. Most importantly, I saw firsthand how much different departments need to work together for everything to make things go well. Lastly, it's a valuable lesson about how all divisions of the NLP are connected to achieve and fulfill its mandates.</p>
+
+    <h2>C. Best Practices and Best Features of the Library</h2>
+    <p>As I've stated above, the NLP is really good at preserving documents such as Filipiniana resources, which I saw and experienced when assigned to different divisions. Still, a great feature is how much they focus on each division's functions. Again, the way different departments work together so well, moving smoothly from office work to public events, shows how organized the NLP is. It's clear that the NLP cares deeply about managing its resources well and reaching out to the community.</p>
+  </main>
+
+  <footer>
+    &copy; 2025 My Portfolio | NLP
+  </footer>
+
+  <a href="weekly.html" class="home-button" title="Back to Weekly Journal">⬅️</a>
+
+</body>
+</html>

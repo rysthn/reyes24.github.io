@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 1 Reflection Journal | National Library of the Philippines</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/library-4.css">
+  <style>
+    :root {
+      --ph-blue: #0038A8;
+      --ph-red: #CE1126;
+      --ph-yellow: #FFD700;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      --shadow-hover: 0 20px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #fdfdfd;
+      margin: 0;
+      text-align: center;
+      color: #333;
+    }
+
+    .library-hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      min-height: 320px;
+      padding: 80px 20px;
+      text-align: center;
+      background:
+        linear-gradient(135deg, rgba(0, 56, 168, 0.7) 0%, rgba(206, 17, 38, 0.7) 50%, rgba(255, 215, 0, 0.7) 100%),
+        url('../images/NLPhead.jpg') center/cover no-repeat;
+      background-blend-mode: overlay;
+    }
+
+    .library-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .library-hero * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .library-logo {
+      width: 200px;
+      max-width: 200px;
+      margin-bottom: 20px;
+      animation: fadeInDown 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    .library-hero h1 {
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+      line-height: 1.2;
+      animation: fadeInUp 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    .library-hero p {
+      font-size: 1.1rem;
+      margin: 0;
+      max-width: 90%;
+      line-height: 1.4;
+      animation: fadeInUp 2s ease forwards;
+      opacity: 0;
+    }
+
+    .journal-content {
+      max-width: 900px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      line-height: 1.7;
+      text-align: left;
+    }
+
+    .journal-content h2 {
+      color: var(--ph-blue);
+      margin-top: 0;
+    }
+
+    footer {
+      background: var(--ph-blue);
+      color: #fff;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--ph-yellow);
+      color: #333;
+      font-size: 1.8rem;
+      padding: 15px 18px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      transition: transform 0.4s ease, box-shadow 0.3s ease, background 0.3s ease;
+      z-index: 999;
+      animation: pulse 2.5s infinite;
+    }
+
+    .home-button:hover {
+      background: var(--ph-red);
+      color: #fff;
+      transform: translateY(-5px) scale(1.1) rotate(-10deg);
+      box-shadow: var(--shadow-hover);
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+    }
+
+    @keyframes fadeInDown {
+      0% { transform: translateY(-20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      0% { transform: translateY(20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="library-hero">
+    <img src="../images/NLP.png" alt="National Library Logo" class="library-logo" />
+    <h1>Week 1 Reflection Journal</h1>
+    <p>National Library of the Philippines Internship</p>
+  </section>
+
+  <main class="journal-content">
+    <h2>A. Meaningful Experiences</h2>
+    <p>Honestly, I was very nervous during my first week at the National Library. Our group was first assigned to the Collection Development Division, which showed me how much work goes into processing books, such as manual processing. But still, I also enjoyed stamping books and then inputting their information into their KOHA system. This made me feel like I was ready to work as an encoder, kidding aside! I realized that this process is very important, especially for the NLP. Later in the week, moving to the Cataloging Division was also very interesting. We cataloged books, which challenged my skills again, but I still learned a lot from it. Overall, it was a week full of learning and doing for us interns, making every task feel important for our profession.</p>
+
+    <h2>B. Lessons Learned</h2>
+    <p>This week, I learned just how many divisions are involved in running a library, especially within the Collection Development Division. I understood all the different ways the NLP acquires its books, like through donations, gift and exchange programs, and legal deposit. I also learned how important it is to be careful and specific when stamping accession numbers or typing information into the computer, because small mistakes can cause big problems for library operations. Furthermore, when I started cataloging, I learned even more about finding the right subjects for books and how much detail goes into organizing them. It really showed me that library work requires a lot of teamwork and attention to every piece of information. I also realized that being with the right people and cooperation, we can do everything with quality.</p>
+
+    <h2>C. Best Things About the Library</h2>
+    <p>From what I've seen so far, one of the best things about the National Library is how they manage library operations. Moreover, Ma'am Elaine provided us with information on how they acquire all the books they have at the NLP. I also enjoyed using their KOHA computer system, which makes it easier for librarians to input new book information and find books for clients. Overall, they are clearly focused on keeping library resources accessible to the public through various services and types of resources.</p>
+  </main>
+
+  <footer>
+    &copy; 2025 My Portfolio | NLP
+  </footer>
+
+  <a href="weekly.html" class="home-button" title="Back to Weekly Journal">⬅️</a>
+
+</body>
+</html>

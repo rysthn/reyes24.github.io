@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Documentation | NLP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/library-4.css">
+  <style>
+    :root {
+      --ph-blue: #0038A8;
+      --ph-red: #CE1126;
+      --ph-yellow: #FFD700;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      --shadow-hover: 0 20px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      background: #fdfdfd;
+      color: #333;
+    }
+
+    .library-hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      min-height: 320px;
+      padding: 80px 20px;
+      background:
+        linear-gradient(135deg, rgba(0, 56, 168, 0.7) 0%, rgba(206, 17, 38, 0.7) 50%, rgba(255, 215, 0, 0.7) 100%),
+        url('../images/NLPhead.jpg') center/cover no-repeat;
+      background-blend-mode: overlay;
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    .library-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .library-hero .library-logo {
+      position: relative;
+      z-index: 1;
+      width: 200px;
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .library-hero h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+      line-height: 1.2;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    }
+
+    .library-hero p {
+      position: relative;
+      z-index: 1;
+      font-size: 1.1rem;
+      margin: 0;
+      max-width: 90%;
+      line-height: 1.4;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    .docs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1600px;
+      margin: 0 auto;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: slideIn 1.5s ease forwards 0.5s;
+    }
+
+    .docs-grid img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .docs-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: var(--shadow-hover);
+    }
+
+    footer {
+      text-align: center;
+      background: var(--ph-blue);
+      color: #fff;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--ph-yellow);
+      color: #333;
+      font-size: 1.8rem;
+      padding: 15px 18px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      transition: transform 0.4s ease, box-shadow 0.3s ease, background 0.3s ease;
+      z-index: 999;
+      animation: pulse 2.5s infinite;
+    }
+
+    .home-button:hover {
+      background: var(--ph-red);
+      color: #fff;
+      transform: translateY(-5px) scale(1.1) rotate(-10deg);
+      box-shadow: var(--shadow-hover);
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="library-hero fade-in">
+    <img src="../images/NLP.png" alt="NLP Logo" class="library-logo" />
+    <h1>Documentation</h1>
+  </section>
+
+  <main class="docs-grid slide-in">
+  <img src="../images/NLP/IMG_20250613_094047.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250613_094051.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250613_114835.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250613_160359.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250613_160401.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250616_130035.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250616_153304.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250616_153456.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250616_165717.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250616_165726.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250616_165733.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250616_165904.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250616_165913.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250616_165923.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250616_165957.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_073735.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_075911.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_080013.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_083025.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_085032.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_085151.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_085306.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_085310.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_150922.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_151034.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_163842.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_164134.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_164341.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_164539.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_164644.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_164825.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_164931.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_165313.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_165430.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_165432.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_165449.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250617_165457.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250618_084153.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250618_084202.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250618_163616.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250618_163640.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250618_163734.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250618_163737.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250618_164223.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250618_170113.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250618_170116.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250618_170141.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250618_170150.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250619_081526.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250619_082753.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250619_090425.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250619_090436.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250619_095802.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250619_135637.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250619_165044.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250619_165112.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250619_165150.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250619_165200.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250620_084059.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250620_110330.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250620_154318.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250620_154323.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_072658.jpg" alt="" />
+    <img src="../images/NLP/IMG_20250623_074505.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_074513.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_074520.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_084407.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_084413.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_084417.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_130214.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_130223.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_130234.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_133410.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_133412.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_133426_1.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_133437.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_133450.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_133457.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_135137.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_135644.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_135654.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_141244.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_145315.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_160532.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_165533.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_165633.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250623_165641.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250625_082353.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250625_085923.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250625_090712.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250625_111208.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250625_112221.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250625_112227.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250625_140538.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250625_140544.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250626_092140.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250626_092147.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250626_092148.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250626_092205.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250626_092218.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250626_092222.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250626_155047.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250627_090926.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250627_090931.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250627_090933.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250627_093254.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250627_093302.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250627_135711.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250627_165013.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250627_165016.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250627_165018.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250627_165020.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250630_091540.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250630_091544.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250630_091547.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250630_145552.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250630_145624.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250630_150545.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250630_154643.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250630_154904.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250702_074441.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250703_091310.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250703_091317.jpg" alt="" />
+  <img src="../images/NLP/Messenger_creation_E750F225-3BAC-4474-8889-ED2B6ECF41A8.jpeg" alt="" />
+  <img src="../images/NLP/received_554993180880710.jpeg" alt="" />
+  <img src="../images/NLP/received_699625822920866.jpeg" alt="" />
+  <img src="../images/NLP/received_734490902336558.jpeg" alt="" />
+  <img src="../images/NLP/received_761892909739918.jpeg" alt="" />
+  <img src="../images/NLP/received_1015582167400462.jpeg" alt="" />
+  <img src="../images/NLP/received_1096550619200379.jpeg" alt="" />
+  <img src="../images/NLP/received_1245929597165365.jpeg" alt="" />
+  <img src="../images/NLP/received_1247767566337614.jpeg" alt="" />
+  <img src="../images/NLP/received_1406215553949049.jpeg" alt="" />
+  <img src="../images/NLP/received_1406872827215900.jpeg" alt="" />
+  <img src="../images/NLP/received_1434234357717514.jpeg" alt="" />
+  <img src="../images/NLP/received_2173146919823422.jpeg" alt="" />
+  <img src="../images/NLP/2842c86d-b347-4dd2-8be7-157becf8f280photo.png.jpeg" alt="" />
+  <img src="../images/NLP/df22a09a-1f2a-4d7b-b255-c62fb6b09467photo.png.jpeg" alt="" />
+  <img src="../images/NLP/IMG_20250610_090323.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250610_090347.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250610_093641.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250610_093643.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250610_094241.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250610_105557.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250610_111640.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250610_133259.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250610_133303.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250610_133306.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250610_143319.jpg" alt="" />
+  <img src="../images/NLP/IMG_20250610_170340.jpg" alt="" />
+</main>
+
+</main>
+
+
+  <footer>
+    &copy; 2025 My Portfolio | NLP
+  </footer>
+
+  <a href="library-4.html" class="home-button" title="Back to Library">⬅️</a>
+
+</body>
+</html>
